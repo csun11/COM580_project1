@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  
+  <head profile="http://www.w3.org/2005/10/profile">
+    <meta name="description" content="Homepage of CT &amp; MRI Aide" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="screen.css" />
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" media="screen" href="screenIE.css" />
+    <![endif]-->
+
+    <script type="text/javascript" src="http://use.typekit.com/rtk6jir.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <title>CT &amp; MRI Aide application: data input page</title>
+  </head>
+
+
+  <body>
+	<div id="header">
+		<h1>CT &amp; MRI Aide</h1>
+	</div>
+
+	<div id="leftpanel">
+
+	</div>
+
+	<div id="rightpanel">
+		<form action="result.htm">
+
+			<fieldset id="basicinfo">
+			<legend>Patient basic info</legend>
+				<label for="pname">Name:</label> <br/>
+				<input type="text" name="pname" id="pname" placeholder="Enter patient's name" autocomplete="on" /> 
+					<br />
+				<label for="age">Age:</label><br />
+				<input type="text" name="age" id="age" required/> <br/>
+
+					Gender:<br />
+					<input type="radio" name="gender" value="male" id="male" /><label for="male"> Male</label><br />
+					<input type="radio" name="gender" value="female" id="female" /><label for="female"> Female</label><br />
+			</fieldset>
+	
+			
+			<fieldset id="scantype">
+				<p>Select the applicable type(s) of scan:</p>
+				<input type="checkbox" name="scan_type" value="CT" id="CT" /><label for="CT"> CT scan</label><br />
+				<input type="checkbox" name="scan_type" value="MRI" id="MRI" /><label for="MRI"> MRI scan</label><br />
+			</fieldset>
+			
+			<fieldset id="scanportion">
+				<p>Portion of body scanned:</p>
+				<select>
+					<option></option>
+					<option value="head">Head</option>
+					<option value="torso">Torso</option>
+					<option value="arm">Arm</option>
+					<option value="leg">Leg</option>
+				</select>
+			</fieldset>
+
+			<fieldset id="CT_data">
+				<legend>Symptoms observed under CT scan</legend>
+				<p>Shape of abnormal tissues:</p> 
+				<select>
+					<option></option>
+					<option value="irregular">Irregular</option>
+					<option value="round">Round</option>
+					<option value="flakes">Flakes</option>
+					<option value="bulks">Bulks</option>
+				</select>
+			
+				<p>Density of abnormal tissues observed under CT:</p> 
+				<select>
+					<option></option>
+					<option value="low">Low</option>
+					<option value="medium">Medium</option>
+					<option value="high">High</option>
+					<option value="heterogeneous">Heterogeneous</option>
+				</select>
+
+				<p>Enhanced view under CT:</p>
+				<select>
+					<option></option>
+					<option value="low">Low</option>
+					<option value="medium">Medium</option>
+					<option value="high">High</option>
+					<option value="irregular">Irregular</option>
+				</select>
+			</fieldset>		
+
+			<fieldset id="MRI_data">
+				<legend>Symptoms observed under MRI scan</legend>
+				<p>Shape of abnormal tissues:</p> 
+				<select>
+					<option></option>
+					<option value="irregular">Irregular</option>
+					<option value="round">Round</option>
+					<option value="flakes">Flakes</option>
+					<option value="bulks">Bulks</option>
+				</select>
+
+				<p>MRT1 value:</p> 
+				<select>
+					<option></option>
+					<option value="shortt1">Short T1</option>
+					<option value="longt1">Long T1</option>
+					<option value="mixed">Mixed T1</option>
+				</select>
+
+				<p>MRT2 value:</p>
+				<select>
+					<option></option>
+					<option value="shortt1">Short T2</option>
+					<option value="longt1">Long T2</option>
+					<option value="mixed">Mixed T2</option>
+				</select>
+			</fieldset>	
+
+			<input type="submit" value="Submit" />
+			<p>Click Submit to view the list of most probable diseases.</p>
+			<input type="reset" value="Start over" />
+			<!--to add a modal window to ask whether to clean all fields -->
+		</form> 
+	
+	
+	</div>
+
+	<div id="footer">
+     <ul>
+		<li><a href="#">Terms</a></li>
+		<li><a href="#">Help</a></li>
+		<li><a href="#">About</a></li>
+	 </ul>
+    </div>
+  </body>
+</html>
