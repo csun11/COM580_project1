@@ -15,6 +15,9 @@
     <script type="text/javascript" src="http://use.typekit.com/rtk6jir.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="ctmri.js"></script>
+
     <title>CT &amp; MRI Aide application: data input page</title>
   </head>
 
@@ -24,14 +27,18 @@
 		<h1>CT &amp; MRI Aide</h1>
 	</div>
 
-	<div id="leftpanel">
-
+	<div id="nav">
+		<ul>
+			<li><a href="#pbasic">Patient basic info</a></li>
+			<li><a href="#treatment">Treatment info</a></li>
+			<li><a href="#symptoms">Symptoms</a></li>
+		</ul>
 	</div>
 
-	<div id="rightpanel">
+	<div id="content">
 		<form action="result.htm">
 
-			<fieldset id="basicinfo">
+			<fieldset id="pbasic">
 			<legend>Patient basic info</legend>
 				<label for="pname">Name:</label> <br/>
 				<input type="text" name="pname" id="pname" placeholder="Enter patient's name" autocomplete="on" /> 
@@ -45,13 +52,11 @@
 			</fieldset>
 	
 			
-			<fieldset id="scantype">
+			<fieldset id="treatment">
 				<p>Select the applicable type(s) of scan:</p>
 				<input type="checkbox" name="scan_type" value="CT" id="CT" /><label for="CT"> CT scan</label><br />
 				<input type="checkbox" name="scan_type" value="MRI" id="MRI" /><label for="MRI"> MRI scan</label><br />
-			</fieldset>
-			
-			<fieldset id="scanportion">
+
 				<p>Portion of body scanned:</p>
 				<select>
 					<option></option>
@@ -62,7 +67,7 @@
 				</select>
 			</fieldset>
 
-			<fieldset id="CT_data">
+			<fieldset id="symptoms" class="ctdata">
 				<legend>Symptoms observed under CT scan</legend>
 				<p>Shape of abnormal tissues:</p> 
 				<select>
@@ -92,7 +97,7 @@
 				</select>
 			</fieldset>		
 
-			<fieldset id="MRI_data">
+			<fieldset class="mridata">
 				<legend>Symptoms observed under MRI scan</legend>
 				<p>Shape of abnormal tissues:</p> 
 				<select>

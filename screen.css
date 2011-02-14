@@ -1,12 +1,26 @@
-#overlay {
-position:absolute;
-top:0;
-left:0;
-height:100%;
-width:100%;
-background:black url(loader.gif) no-repeat scroll center center;
-}
-
-#container {
-	position:absolute;
+#login {
+	background-color: white;
+	position: absolute;
 	}
+
+.shade {
+	background-color: black;
+	height: 100%;
+	width: 100$;
+	}
+
+#rightpanel {
+	margin: 0 auto;
+	width: 650px;
+	float: right;
+	}
+
+fieldset {
+	width: 450px;
+	}
+
+#leftpanel {
+	position: relative;
+	}
+
+

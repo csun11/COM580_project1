@@ -1,33 +1,22 @@
 $(document).ready(function(){
 	alert('tset');
-  $('input.lightbox').click(function(e) {
-	// hide scrollbars
-	$('body').css('overflow', 'hidden');
-	$('<div id="overlay"></div>')
-		.css('top', $(document).scrollTop())
-		.css('opacity', '0')
-		.animate({'opacity': '0.5'}, 'slow')
-		.appendTo('body');
-	$('<div id="lightbox"></div>')
-		.hide()
-		.appendTo('body');
-	$('#lightbox') //this portion needs to be fixed so that the form loads, instead of a picture!!!!!!!!!!!!!!!!
-		.attr('src', $(this).attr('href'))
-		.load(function() {
-			positionLightboxImage();
-		})
-		.click(function() {
-			removeLightbox();
-			})
-		.appendTo('#lightbox');
-	return false;
+  $('input.lightbox').click(function() {
+	$('body').addClass('shade');
 	});
-});
 
-function removeLightbox() {
-$('#overlay, #lightbox')
-.fadeOut('slow', function() {
-$(this).remove();
-$('body').css('overflow-y', 'auto'); // show scrollbars!
+  $('#header, #intro, #footer').click(function(){
+		('.shade').animate({
+			opacity: 1
+		}, 'slow', function(){});
+  });
+
+//this js can only turn the background to black, but I cannot make the background back to white again when user clicks somewhere outside the login field. Why??
+
+	$(window).scroll(function() {
+		$('#leftpanel')
+			.stop()
+			.animate({top: $(document).scrollTop()}, 'slow', 'easeOutBack');
+	});
+
+
 });
-}
