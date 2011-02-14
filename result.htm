@@ -15,26 +15,34 @@
     <script type="text/javascript" src="http://use.typekit.com/rtk6jir.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript" src="ctmri.js"></script>
+
+
     <title>CT &amp; MRI Aide application: result page</title>
   </head>
 
 
   <body>
+   <div id="wrapper">
 	<div id="header">
 		<h1>CT &amp; MRI Aide</h1>
 	</div>
 
-	<div id="leftpanel">
+	<div id="nav">
 		<p>Most probable diseases:</p>
 		<ol>
-			<li>Fever</li>
+			<li><button type="button" onclick="loadXMLDoc()">Fever</button></li>
 			<li>Flu</li>
 			<li>H1N1</li>
 		</ol>
 	</div>
 
-	<div id="rightpanel">
-		<div id="results">
+	<div id="content">
+		<div class="results" id="ajax">
+		</div>
+
+		<div class="results" id="noajax">
 			<p>Characteristics of:</p>
 			<h2>Fever</h2>
 			<ul>
@@ -43,10 +51,7 @@
 				<li>Symptoms: body temperature > 100 F</li>
 			</ul>
 		</div>
-		<div id="noresult">
-			<p>No type of disease matches the symptoms you have input. </p>
-			<p>Please click Return to check your input.</p>
-		</div>
+
 		<a href="input.htm">Return</a>
 		<a href="#">Print this page</a>
 	<div>
@@ -58,5 +63,6 @@
 		<li><a href="#">About</a></li>
 	 </ul>
     </div>
+   </div>
   </body>
 </html>
