@@ -1,22 +1,14 @@
 $(document).ready(function(){
-	alert('tset');
-  $('input.lightbox').click(function() {
-	$('body').addClass('shade');
-	});
 
-  $('#header, #intro, #footer').click(function(){
-		('.shade').animate({
-			opacity: 1
-		}, 'slow', function(){});
-  });
 
-//this js can only turn the background to black, but I cannot make the background back to white again when user clicks somewhere outside the login field. Why??
-
+//make the vertical navigation bar to be always visible floating on right
 	$(window).scroll(function() {
 		$('#nav')
 			.stop()
-			.animate({top: $(document).scrollTop()}, 'slow', 'easeOutBack');
+			.animate({top: $(document).scrollTop()}, 'fast');
 	});
+
+
 
 //use checkboxes to control the visibility of CT/MRI fieldset 
 	$('input#ct').click(function() {
@@ -28,7 +20,7 @@ $(document).ready(function(){
 		});
 
 
-//showing results only when AJAX cannot function
+//showing results only when AJAX is not supported
 	$('#noajax').hide();
 		
 });
