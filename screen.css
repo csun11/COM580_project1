@@ -1,7 +1,73 @@
-#login {
-	background-color: white;
-	position: absolute;
+html {
+	background-color: #2554C7;
 	}
+
+#wrapper {
+	margin: 0 auto;
+	width: 650px;
+	background-color: white;
+	padding: 20px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	}
+
+
+#header, #footer, #content, #nav {
+	padding: 10px;
+	}
+
+#footer {
+	position: relative;
+	bottom: 15px;
+	}
+
+h1 {
+	font-family: arial;
+	font-size: 36px; 
+	font-weight: bold;
+	color: #2554C7;
+	}
+
+a {
+	text-decoration: none;
+	color: #3EA99F;
+	padding: 10px;
+	}
+
+.notes {
+	font-family: arial;
+	font-size: 16px;
+	color: gray;
+	}
+
+.underlined {
+	border-bottom: dotted #CCCCCC;
+	font-weight: bold;
+	font-family: arial;
+	margin-top: 20px;
+	}
+
+#content li {
+	list-style-type: decimal;
+	}
+
+#footer li {
+	line-height: 150%;
+	margin: 10px 10px;
+	float: left;
+	list-style-type: none;
+	}
+
+fieldset {
+	width: 450px;
+	font-weight: bold;
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	}
+
 
 .shade {
 	background-color: black;
@@ -9,18 +75,21 @@
 	width: 100$;
 	}
 
-#rightpanel {
-	margin: 0 auto;
-	width: 650px;
+.results {
+	margin: 20px;
+	}
+
+#nav {
+	position: relative;
 	float: right;
 	}
 
-fieldset {
-	width: 450px;
-	}
 
-#leftpanel {
-	position: relative;
-	}
+
+
+
+
+
+
 
 

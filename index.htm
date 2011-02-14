@@ -23,27 +23,29 @@
 
 
   <body>
+   <div id="wrapper">
+
 	<div id="header">
 		<h1>CT &amp; MRI Aide</h1>
+		<p class="subtitle">An application to assist CT or MRI physicians with making diagnostic conclusions. </p>
 	</div>
 
 	<div id="login">
-
 		<form action="input.htm">
 			<legend>Login</legend>
 			<fieldset>
-				<label for="account">Account:</label> 
+				<label for="account">Account:</label> <br />
 				<input type="text" name="account" id="account" class="lightbox" placeholder="Enter account name" autocomplete="on" /> 
 					<br />
-				<label for="pw">Password:</label>
+				<label for="pw">Password:</label> <br />
 				<input type="password" name="pwd" id="pw" class="lightbox" required/> 
 			</fieldset>
 				<input type="submit" value="Submit" />
 		</form> 
 	</div>
 
-	<div id="intro">
-		<p>An application to assist CT or MRI physicians with making diagnostic conclusions</p>
+	<div id="content">
+		<p class="underlined">Follow the steps and get hints about the diagnosis:
 		<ol>
 			<li>Input patient info;</li>
 			<li>Input the data found from CT or MRI scan;</li>	
@@ -56,8 +58,9 @@
 		<li><a href="#">Terms</a></li>
 		<li><a href="#">Help</a></li>
 		<li><a href="#">About</a></li>
+		<li><a href="#">Logout</a></li>
 	 </ul>
     </div>
-
+   </div>
   </body>
 </html>
