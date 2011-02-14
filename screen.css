@@ -1,5 +1,7 @@
 html {
 	background-color: #2554C7;
+	font-family: verdana, sans-serif;
+	font-size: 14px;
 	}
 
 #wrapper {
@@ -11,8 +13,11 @@ html {
 	border-radius: 15px;
 	}
 
-
-#header, #footer, #content, #nav {
+#header, #content {
+	padding: 10px 30px;
+	}
+	
+#footer, #nav {
 	padding: 10px;
 	}
 
@@ -27,7 +32,7 @@ h1 {
 	font-weight: bold;
 	color: #2554C7;
 	}
-
+	
 a {
 	text-decoration: none;
 	color: #3EA99F;
@@ -44,8 +49,10 @@ a {
 	border-bottom: dotted #CCCCCC;
 	font-weight: bold;
 	font-family: arial;
-	margin-top: 20px;
+	margin: 0px 10px 0px 0px;
 	}
+	
+
 
 #content li {
 	list-style-type: decimal;
@@ -65,13 +72,26 @@ a {
 	}
 
 fieldset {
-	width: 450px;
+	width: 400px;
 	font-weight: bold;
 	background-color: ;
 	margin: 10px;
 	padding: 10px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	}
+
+.fieldname {
+	font-weight: bold;
+	font-size: 18px;
+	color: gray;
+	}
+
+.active {
+	background-color: #C3FDB8;
+	background-image: -moz-linear-gradient(0% 80% 90deg, #fff, #bbb);
+	-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 	}
 
 input[type="text"], input[type="password"] {

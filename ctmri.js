@@ -22,7 +22,11 @@ $(document).ready(function(){
 
 //showing results only when AJAX is not supported
 	$('#noajax').hide();
-		
+
+$("#inputdata fieldset").hover(function() {
+	$(this).toggleClass("active");
+	});
+	
 });
 
 //adding AJAX to the result page

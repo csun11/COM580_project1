@@ -38,10 +38,10 @@
 	</div>
 
 	<div id="content">
-		<form action="result.htm">
+		<form action="result.htm" id="inputdata">
 
 			<fieldset id="pbasic">
-			<legend>Patient basic info</legend>
+			<p class="fieldname underlined">Patient basic info</p>
 				<label for="pname">Name:</label> <br/>
 				<input type="text" name="pname" id="pname" placeholder="Enter patient's name" autocomplete="on" /> 
 					<br />
@@ -70,7 +70,7 @@
 			</fieldset>
 
 			<fieldset id="symptoms" class="ctdata">
-				<legend>Symptoms observed under CT scan</legend>
+				<p class="fieldname underlined">Symptoms observed under CT scan</p>
 				<p>Shape of abnormal tissues:</p> 
 				<select>
 					<option></option>
@@ -100,7 +100,7 @@
 			</fieldset>		
 
 			<fieldset class="mridata">
-				<legend>Symptoms observed under MRI scan</legend>
+				<p class="fieldname underlined">Symptoms observed under MRI scan</p>
 				<p>Shape of abnormal tissues:</p> 
 				<select>
 					<option></option>
